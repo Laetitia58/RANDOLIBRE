@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(217deg, rgba(187, 228, 187, 0.8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(41, 79, 8, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+
+/*témoignages*/
+
+#containerTemoignages {
+    column-count: 3;
+    column-width: 20%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+header {
+    padding-top: 5%;
+    text-align: center;
+}
+
+.articleTemoignages {
+    background-color: orange;
+    border: 0.5px solid black;
+    box-shadow: 2px 2px 2px grey;
+    border-radius: 1%;
+    width: 40%;
+    padding: 1.5%;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+.articleTemoignages p {
+    background-color: lightyellow;
+    border-radius: 1%;
+    padding: 5%;
+    line-height: 150%;
+    justify-content: space-around;
+}
+
+.articleTemoignages h3 {
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.articleTemoignages q {
+    line-height: 300%;
+}
+
+/*photos et avis*/
+#photoAvis {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/*section1*/
+#section1 {
+    margin-top: 6%;
+    margin-bottom: 5%;
+}
+
+#photo {
+    width: 80%;
+    border-bottom: 10% solid #FFF;
+
+}
+
+.img {
+    width: 25vw;
+    height: 50vh;
+    background-image: url("images/im10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border: thick double black;
+    border-radius: 2%;
+}
+
+#reflet {
+    width: 80%;
+    transform: rotateX(180deg);
+    opacity: 0.4;
+    overflow: hidden;
+}
+
+#reflet>div {
+    width: 30vw;
+    height: 28vh;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+/*section2*/
+#section2 {
+    width: 30%;
+    margin-top: 10%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+#textareaTitre,
+#textareaCommentaire,
+#signature {
+    width: 100%;
+    font-size: 17pt;
+}
+
+#textareaTitre {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 5%;
+    margin-bottom: 2%;
+}
+
+#signature {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 5%;
+    margin-top: 1%;
+}
+
+#textareaCommentaire {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 15%;
+}
+
+#avis {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin: auto;
+    font-size: 200%;
+    color: orange;
+
+}
+
+#avis button {
+    margin-top: 15%;
+}
+
+#section2 h2 {
+    padding-bottom: 5%;
+}
+
+#formulaire {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border: 1px solid black;
+    border-radius: 1%;
+    box-shadow: 4px 4px 4px black;
+}
+
+#avis {
+    margin-left: 10%;
+}
+
+#avis img {
+    width: 4vw;
+    height: 7vh;
+    border-radius: 3%;
+}
+
+#avis #like {
+    border: 0.5px solid blue;
+    box-shadow: 3px 3px 3px blue;
+    border-radius: 7%;
+}
+
+#avis #dislike {
+    border: 0.5px solid red;
+    box-shadow: 3px 3px 3px red;
+    border-radius: 7%;
+}
+
+#buttonEnvoyer {
+    margin-top: 9%;
+    margin-bottom: 3%;
+    width: 100px;
+    height: 50px;
+    border: 1px solid green;
+    border-radius: 6%;
+}
+
+#buttonEnvoyer:hover {
+    background-color: rgb(120, 120, 223);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px green;
+}
+
+/*date*/
+div.date-con {
+    text-align: center;
+}
+
+#retourSite {
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    background-color: orange;
+}
+
+#retourSite a {
+    text-decoration: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 980px) {
+    article {
+        grid-column: span 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    article,
+    article.featured {
+        display: block;
+        margin: 0 20px;
+    }
+}

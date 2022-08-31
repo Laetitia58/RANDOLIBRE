@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.contain {
+  border-right-color: #212d31;
+  background-color: #eee;
+  border-radius: 1%;
+  border: 1px solid black;
+  box-shadow: 10px 8px 5px 1px;
+  width: min-content;
+  margin: auto;
+  margin-top: 3%;
+}
+
+.wrapper {
+  width: 70%;
+}
+
+div .form {
+  background-color: #eee;
+  border-radius: 1%;
+
+}
+
+#translator_7859 {
+  display: none;
+}
+
+/*drapeaux + bienvenue*/
+#imgForm {
+  display: flex;
+  justify-content: space-around;
+  width: 130%;
+  border: 2px solid white;
+  border-radius: 1%;
+  box-shadow: 3px 2px 4px 4px grey;
+}
+
+.form #bienvenue {
+  font-family: 'Great Vibes';
+  font-size: 220%;
+  display: flex;
+  justify-content: center;
+}
+
+.form #Butterfly {
+  font-family: 'Great Vibes';
+  font-size: 300%;
+  font-weight: bold;
+  color: orange;
+  display: flex;
+  justify-content: center;
+  padding-top: 6%;
+}
+
+.form-headline:after {
+  content: "";
+  display: block;
+  width: 20%;
+  padding-top: 15px;
+  border-bottom: 3px solid green;
+}
+
+.required-input {
+  color: black;
+}
+
+.full-width #permitir {
+  font-size: 12px;
+}
+
+.full-width {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.full-width .retour,
+.full-width .reset-btn {
+  border-radius: 10%;
+}
+
+.full-width .submit-btn:hover,
+.full-width .reset-btn:hover {
+  background-color: darkcyan;
+}
+
+.full-width .retour {
+  border: 0.5px solid darkcyan;
+}
+
+.full-width .retour:hover {
+  background-color: transparent;
+}
+
+.full-width button {
+  margin-left: 3%;
+}
+
+/*infos complémentaires*/
+.contact-wrapper {
+  width: 100%;
+  margin: auto;
+  margin-top: 63%;
+  border-left: 0.5px solid black;
+}
+
+.contacts #Butterfly {
+  font-family: 'Great Vibes';
+  font-size: 250%;
+  font-weight: bold;
+  color: orange;
+  border-radius: 1%;
+}
+
+.contacts li {
+  line-height: 40px;
+}
+
+.highlight-text-grey {
+  font-weight: 650;
+}
+
+.hightlight-contact-info {
+
+  font-weight: 600;
+  font-size: 160%;
+}
+
+.email-info {
+  margin-top: 15%;
+  margin-bottom: 7%;
+  font-size: 120%;
+  font-family: 'Great Vibes';
+  color: green;
+}
+
+.fa-phone {
+  margin-left: 60px;
+}
+
+.highlight-text {
+  color: green;
+  border-radius: 5%;
+  box-shadow: 5px 3px 2px 2px;
+}
+
+#bgLogo {
+  content: url("images/butterflyLogo.png");
+  opacity: 0.7;
+  width: 80%;
+  border-radius: 5%;
+  border: 1px dashed green;
+  margin: auto;
+  margin-bottom: -80%;
+  margin-top: 30%;
+}
+
+/*date heure*/
+.containerDate {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 100%;
+}
+
+#dateHeure {
+  color: grey;
+  font-style: oblique;
+}
+
+@media screen and (min-width: 600px) {
+  .contain {
+    padding: 0;
+  }
+}
+
+.form-input:focus,
+textarea:focus {
+  outline: 1.5px solid #ec1c24;
+}
+
+.form-input,
+textarea {
+  width: 100%;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+}
+
+.wrapper {
+  padding: 1em;
+}
+
+@media screen and (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .wrapper>* {
+    padding: 2em 2em;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts {
+  color: #212d31;
+}
+
+.form {
+  background: #fff;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+form label {
+  display: block;
+}
+
+form p {
+  margin: 0;
+}
+
+.full-width {
+  grid-column: 1 / 3;
+}
+
+button,
+.submit-btn,
+.form-input,
+textarea {
+  padding: 1em;
+}
+
+button,
+.submit-btn {
+  background: transparent;
+  border: 1px solid #ec1c24;
+  color: #ec1c24;
+  border-radius: 15px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+}
+
+button:hover,
+.submit-btn:hover,
+button:focus,
+.submit-btn:focus {
+  background: #ec1c24;
+  outline: 0;
+  color: #eee;
+}
+
+.error {
+  color: #ec1c24;
+}
+
+@media screen and (min-width:700px) and (max-width:920px) {
+  .contain {
+    width: 90%;
+  }
+
+  .wrapper {
+    display: block;
+    margin: auto;
+  }
+
+  .form div {
+    margin-left: -20%;
+  }
+
+  .contact-wrapper {
+    border-left: none;
+    border-top: 0.5px solid black;
+    padding-top: 20%;
+  }
+
+  #dateHeure {
+    margin-right: -25%;
+  }
+}
+
+@media screen and (max-width:705px) {
+  .contain {
+    width: 90%;
+  }
+
+  .wrapper {
+    display: block;
+    margin: auto;
+  }
+
+  #imgForm {
+    margin-left: -15%;
+  }
+
+  .contact-wrapper {
+    border-left: none;
+    border-top: 0.5px solid black;
+    margin-left: -10%;
+    padding-top: 20%;
+  }
+
+  #dateHeure {
+    margin-right: -25%;
+  }
+}
+
+@media screen and (max-width:920px) {
+  #imgForm h4 {
+    display: none;
+  }
+
+  #translator_7859 {
+    display: block;
+  }
+}
