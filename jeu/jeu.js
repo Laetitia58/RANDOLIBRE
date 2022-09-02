@@ -5,7 +5,8 @@ function estValide(button) {
   function setSymbol(btn, symbole) {
     btn.innerHTML = symbole;
   }
-  
+  // La propriété Element.innerHTML de Element récupère ou définit la syntaxe HTML 
+  //décrivant les descendants de l'élément.
   function rechercherVainqueur(pions, joueurs, tour) {
     if (
       pions[0].innerHTML == joueurs[tour] &&
@@ -114,6 +115,9 @@ function estValide(button) {
     return { sendMessage: setText };
   };
   
+  //La méthode querySelectorAll() de Element renvoie une NodeList statique représentant 
+  //une liste des éléments du document 
+  //qui correspondent au groupe de sélecteurs spécifiés.
   function main() {
     var pions = document.querySelectorAll("#Jeu button");
     var joueurs = ["X", "O"];
@@ -164,5 +168,6 @@ function estValide(button) {
   }
   
   main();
+  
  
   

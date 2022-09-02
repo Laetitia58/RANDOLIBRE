@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#bodyConfirmInscrit {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    text-align: center;
+}
+
+#bodyConfirmInscrit h3 {
+    margin-top: 2%;
+    margin-left: -10%;
+    padding-bottom: 15%;
+    font-size: 250%;
+    text-decoration: underline;
+    color: green;
+}
+
+.imgMessageConfirmInscrit {
+    width: 70%;
+    position: absolute;
+    left: 10%;
+    right: auto;
+    opacity: 0.4;
+}
+
+.overlay {
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 180%;
+    padding-top: 6%;
+    padding-bottom: 5%;
+    border: 0.5px solid black;
+    border-radius: 1%;
+}
+
+.overlay p {
+    font-family: 'Great Vibes';
+    font-size: 150%;
+}
+
+#bodyConfirmInscrit a {
+    font-size:200% ;
+    font-weight: bolder;
+    font-style: oblique;
+    text-shadow: 1px 1px 1px black;
+    color: orange;
+    position: absolute;
+    margin-top: 8%;
+}
+
+

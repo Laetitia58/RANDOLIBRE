@@ -13,18 +13,18 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC); //stocker result dans tableau asso
 
 //var_dump($result);
 
-require_once('deconnexionBDD.php');
 ?>
+
+
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="backOfficeAdmin.css" />
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <title>Espace administrateur: Gestion des données+ gestion des données-> utilisateurs</title>
+  <title>Espace administrateur: Gestion des données+ gestion des données-> administrateurs</title>
 
 </head>
 
@@ -33,10 +33,16 @@ require_once('deconnexionBDD.php');
   <section id="containerAdmin">
 
     <h1>Bienvenue
-      <!--< ?php echo $_SESSION['username']; ?>! -->
+         <?php echo $_SESSION['username']; ?>!
     </h1>
     <p>Vous êtes dans votre espace administrateur</p>
     <article id="articleAdmin">
+
+    <div class="gestionCat">
+        <h2><a href="../backOffice/add.php">Gestion du formulaire</a>
+          <h2>
+      </div>
+
       <div class="gestionCat">
         <h2><a href="#gestionUtilisateurs">Gestion des utilisateurs</a>
           <h2>
@@ -82,7 +88,6 @@ require_once('deconnexionBDD.php');
             <th>id</th>
             <th>username</th>
             <th>email</th>
-            <th>type</th>
             <th>password</th>
           </thead>
           <tbody>
@@ -95,7 +100,6 @@ require_once('deconnexionBDD.php');
                 <td><?= $produit['id'] ?></td>
                 <td><?= $produit['username'] ?></td>
                 <td><?= $produit['email'] ?></td>
-                <td><?= $produit['type'] ?></td>
                 <td><?= $produit['password'] ?></td>
                 <td><a href="detailsAdmin.php?id=<?= $produit['id'] ?>">détails</a>
                   <a href="modifier.php?id=<?= $produit['id'] ?>">modifier</a>

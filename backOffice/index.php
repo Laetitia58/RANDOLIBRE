@@ -86,7 +86,7 @@ require_once('close.php');
                     </tbody>
                 </table>
                 <a href="add.php" class="btn btn-success">Ajouter une entrée</a>
-                <a href="rando.php">[retour au site]</a>
+                <a href="../backofficeadmin/accueilAdministrateur.php">retour</a>
             </section>
         </div>
     </main>

@@ -17,15 +17,13 @@
 
     <input id="leMail" name="email" type="text" class="box-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email" required />
 
-    <input id="typeUser" name="type" type="text" class="box-input" placeholder="utilisateur" required />
-
     <input id="mdp" name="password" type="password" class="box-input" placeholder="Mot de passe" required />
 
     <div id="valider">
       <img id="voiture" src="../images/voiture.png">
       <span><input id="confirmer" type="button" name="buttonVoiture" value="confirmer" class="box-button" /> &emsp;
       <input type="submit" name="sinscrire" class="submit-btn" value="s'incrire'">
-      <button class="retour"><a href="rando.php">retour au site</a></button>
+      <button class="retour"><a href="../rando.php">retour au site</a></button>
       <button class="reset-btn" onclick="reset()">Reset</button>
     </div>
 

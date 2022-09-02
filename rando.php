@@ -26,7 +26,7 @@
             <!--traducteur-->
             <div href="" id="google_translate_element">
             <!--compte-->    
-                <li class="iconCompte"><a href="./admin/inscription.php"><img src="images/iconCompte.png" style="width:50px"></a></li>
+                <li class="iconCompte"><a href="./admin/connexionInscrits.php"><img src="images/iconCompte.png" style="width:50px"></a></li>
             </div>
             <!--burger-->
             <div id="burger">
@@ -197,9 +197,9 @@
             </ul>
         </div>
         <ul>
-            <li><button id="livreO" onclick="alert(' Vous devez vous inscrire pour apprécier notre livre d\'Or !')"><a href="/album/album.php" ></a>Livre d'Or</button></li>
+            <li><a href="album/album.php">Livre d'Or</a></li>
             <li></li><br>
-            <li><a href="/jeu/jeu.html" style="color:black">Jouez!</a></li>
+            <li><a href="jeu/jeu.html" style="color:black">Jouez!</a></li>
             <li>
                 <img src="images/butterflyLogo.png" style="width: 6rem; height: 3rem; border-radius:10px;">
             </li>

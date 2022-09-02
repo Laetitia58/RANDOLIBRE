@@ -74,11 +74,11 @@
     text-shadow: 2px 2px 2px black;
 }
 /*deconnexionBDD*/
-#bodyDeconn{
+#bodyAdmin{
     margin:0;
     padding:0;
 }
-#bodyDeconn div{
+#bodyAdmin div{
     display: flex;
     justify-content: space-evenly;
     margin-top: 5%;

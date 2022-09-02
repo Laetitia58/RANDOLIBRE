@@ -55,7 +55,6 @@ $produit = $query->fetch();
                 <p>id: <?= $produit['id'] ?></p>
                 <p>username: <?= $produit['username'] ?></p>
                 <p>email: <?= $produit['email'] ?></p>
-                <p>type: <?= $produit['type'] ?></p>
                 <p>password: <?= $produit['password'] ?></p>
                 <p><a href="accueilAdministrateur.php">Retour</a>
                    <a href="modifier.php?id=<?= $produit['id'] ?>">Modifier</a>

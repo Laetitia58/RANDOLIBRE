@@ -74,7 +74,7 @@
                 <div id="bgLogo"></div>
                 <!--date heure-->
                 <div class="containerDate">
-                    <div class="date"></div>  &nbsp;      
+                    <div class="date"></div> &nbsp;
                     <div id="dateHeure">00:00:00</div>
                 </div>
             </section>

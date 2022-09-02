@@ -137,7 +137,7 @@
 
     <!--date-->
 
-    <div id="retourSite"><a href="/rando.php">retour au site</a></div>
+    <div id="retourSite"><a href="../rando.php">retour au site</a></div>
 
 
     <script src="album.js" defer></script>

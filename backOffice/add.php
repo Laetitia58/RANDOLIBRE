@@ -45,7 +45,7 @@ require_once('connect.php');
 
         
         $_SESSION['message'] = "Entrée ajoutée avec succès!";
-require_once('close.php');
+
 
         header('Location:index.php');     // fonctionne SSI pas de message AVANT, ni de echo etc...            
     }else{
@@ -101,6 +101,7 @@ require_once('close.php');
                         <input class="form-control" type="text" id="autorisation" name="autorisation">
                     </div>
                     <button class="btn btn-success">Enregistrer</button>
+                    <a href="../backofficeadmin/accueilAdministrateur.php">retour</a>
                 </form>
             </section>
         </div>

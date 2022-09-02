@@ -13,7 +13,6 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC); //stocker result dans tableau asso
 
 //var_dump($result);
 
-require_once('deconnexionBDD.php');
 ?>
 <!DOCTYPE html>
 <html>

@@ -18,7 +18,7 @@ $db = null;
     <h3 id="messageDeconnBO">Vous êtes déconnecté.e !</h3> 
 </div>
     <section class="overlay">
-        <a id="deconnBDDretourSite" href="/rando.php">retour au site</a>
+        <a id="deconnBDDretourSite" href="../rando.php">retour au site</a>
     </section>  
 </body>
 </html>

@@ -118,3 +118,17 @@ p {
     margin-top: 50%;
     text-shadow: 1px 1px 1px green;
 }
+
+/*voiture*/
+
+#car{
+display: flex;
+justify-content:center;
+align-items: baseline;
+}
+#confirmer, .box-button{
+    margin-right: 6%;
+}
+
+
+
